@@ -4,11 +4,30 @@
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
+    //QApplication a(argc, argv);
 
     //a.setAttribute(Qt::AA_UseHighDpiPixmaps);
 
-    //a.setAttribute(Qt::AA_EnableHighDpiScaling);
+    QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+
+    QApplication a(argc, argv);
+
+    a.setStyleSheet(
+                "QWidget \
+    {\
+      color: rgb(255 ,255, 255); \
+      background-color: rgb(50, 50, 50); \
+    } \
+                    QHeaderView::section \
+    {\
+                        color: rgb(255 ,255, 255);\
+                        background-color: rgb(50, 50, 50);\
+                    }\
+                QToolButton::hover\
+                {\
+                  border: 2px solid rgb(0,140,149);\
+                }\
+                ");
 
     QStringList files = QFileDialog::getOpenFileNames(nullptr,
                                                       QObject::tr("Load Images"),
