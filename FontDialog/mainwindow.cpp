@@ -9,6 +9,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    this->LoadSettings();
+
     ui->setupUi(this);
 
     this->m_PreferencesDialog = new PreferencesDialog(nullptr);
@@ -59,13 +61,32 @@ void MainWindow::OnPreferencesClicked()
 
 void MainWindow::LoadSettings()
 {
+    QSettings appSettings("appSettings.ini",QSettings::IniFormat);
+    QString fontFamily = appSettings.value("app.font.family",QString()).toString();
+    int fontSize = appSettings.value("app.font.size", 12).toInt();
+    bool IsFontBold = appSettings.value("app.font.bold", false).toBool();
+    bool IsFontItalic = appSettings.value("app.font.italic", false).toBool();
+    QFont f = appSettings.value("app.font",QFont()).value<QFont>();
 
+    qDebug() << "font           : " << f.toString();
+    qDebug() << "font family    : " << fontFamily;
+    qDebug() << "font size    : " << fontSize;
+    qDebug() << "font Bold    : " << IsFontBold;
+    qDebug() << "font Italic    : " << IsFontItalic;
+
+    qApp->setFont(f);
 }
 
 void MainWindow::SaveSettings()
 {
     QFontDialog *fd = this->m_PreferencesDialog->GetFontDialog();
+    QFont f = fd->currentFont();
     QSettings appSettings("appSettings.ini",QSettings::IniFormat);
-    appSettings.setValue("font",fd->currentFont());
+    appSettings.setValue("app.font.family",f.family());
+    appSettings.setValue("app.font.size",f.pointSize());
+    appSettings.setValue("app.font.bold",f.bold());
+    appSettings.setValue("app.font.italic",f.italic());
+    appSettings.setValue("app.font",f.toString());
+
     //appSettings.setValue("fontSize",fd->fonts)
 }
