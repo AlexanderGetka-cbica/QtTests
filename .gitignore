@@ -16,3 +16,7 @@ ITKSnap_Issue_ExtProc/ITKSnap_Issue_ExtProc\.pro
 build-FontDialog-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
 
 FontDialog/FontDialog\.pro\.user
+
+build-ColorDialog-Qt_5_11_1_msvc2017_64_98c2e2-Debug/
+
+ColorDialog/ColorDialog\.pro\.user
