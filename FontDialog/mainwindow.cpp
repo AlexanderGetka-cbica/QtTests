@@ -29,6 +29,7 @@ void MainWindow::OnPreferencesClicked()
     int r = this->m_PreferencesDialog->exec();
     if(r == PreferencesDialog::Accepted)
     {
+        qDebug() << " Accepted" << endl;
         //this->m_PreferencesDialog->accept();
         this->m_PreferencesDialog->SetApplicationFont();
         QFontDialog *fd = this->m_PreferencesDialog->GetFontDialog();
@@ -39,7 +40,10 @@ void MainWindow::OnPreferencesClicked()
         qDebug() << "font style     : " << font.style();  //  StyleNormal = 0, StyleItalic = 1, StyleOblique = 2
         qDebug() << "font pointSize : " << font.pointSize();
         //qApp->setFont(font);
+        this->setStyleSheet(this->m_PreferencesDialog->GetColorStyleSheet());
     }
+    else
+        qDebug() << " Rejected " << endl;
 
 //    bool ok;
 //    QFont font = QFontDialog::getFont(

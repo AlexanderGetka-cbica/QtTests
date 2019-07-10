@@ -38,6 +38,11 @@
         </item>
         <item>
          <property name="text">
+          <string>Color</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
           <string>User Directory</string>
          </property>
         </item>

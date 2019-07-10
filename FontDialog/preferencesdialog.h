@@ -3,6 +3,7 @@
 
 #include <QDialog>
 class QFontDialog;
+class QColorDialog;
 
 namespace Ui {
 class PreferencesDialog;
@@ -20,6 +21,8 @@ public:
 
     void SetApplicationFont();
 
+    QString GetColorStyleSheet();
+
 public slots:
 
     void OnItemSelectionChanged();
@@ -27,6 +30,8 @@ public slots:
 private:
     Ui::PreferencesDialog *ui;
     QFontDialog *m_FontDialog;
+    QColorDialog *m_ColorDialog;
+    QString m_colorStyleSheetString;
 };
 
 #endif // PREFERENCESDIALOG_H
