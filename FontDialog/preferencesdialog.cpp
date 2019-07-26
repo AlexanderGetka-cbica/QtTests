@@ -4,12 +4,19 @@
 #include <QColorDialog>
 #include <QSizePolicy>
 #include <QDebug>
+#include "generaldialog.h"
 
 PreferencesDialog::PreferencesDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::PreferencesDialog)
 {
     ui->setupUi(this);
+    //ui->listWidget->setMinimumWidth(ui->listWidget->sizeHintForColumn(0) +
+                                    //(ui->listWidget->frameWidth()*2) );
+    ui->listWidget->setFixedWidth(175);
+
+    qDebug() << " size hint for column = " << ui->listWidget->sizeHintForColumn(0) << endl;
+    qDebug() << " frame width = " << ui->listWidget->frameWidth() << endl;
 
     this->m_FontDialog = new QFontDialog(ui->stackedWidget);
     //this->m_FontDialog->setStyleSheet("background-color:blue;");
@@ -36,9 +43,11 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
                                         think you'd want that. */
                 | QColorDialog::NoButtons
                 );
+
+    this->m_GeneralDialog = new GeneralDialog(ui->stackedWidget);
     ui->stackedWidget->insertWidget(0,this->m_FontDialog);
     ui->stackedWidget->insertWidget(1,this->m_ColorDialog);
-    ui->stackedWidget->insertWidget(2,new QWidget(ui->stackedWidget));
+    ui->stackedWidget->insertWidget(2,this->m_GeneralDialog);
 
     connect(ui->listWidget,SIGNAL(itemSelectionChanged()),this,SLOT(OnItemSelectionChanged()));
     //this->m_FontDialog->showMaximized();

@@ -4,6 +4,7 @@
 #include <QDialog>
 class QFontDialog;
 class QColorDialog;
+class GeneralDialog;
 
 namespace Ui {
 class PreferencesDialog;
@@ -31,6 +32,7 @@ private:
     Ui::PreferencesDialog *ui;
     QFontDialog *m_FontDialog;
     QColorDialog *m_ColorDialog;
+    GeneralDialog *m_GeneralDialog;
     QString m_colorStyleSheetString;
 };
 

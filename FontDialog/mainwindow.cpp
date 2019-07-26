@@ -39,8 +39,8 @@ void MainWindow::OnPreferencesClicked()
         qDebug() << "font family    : " << font.family();
         qDebug() << "font style     : " << font.style();  //  StyleNormal = 0, StyleItalic = 1, StyleOblique = 2
         qDebug() << "font pointSize : " << font.pointSize();
-        //qApp->setFont(font);
-        this->setStyleSheet(this->m_PreferencesDialog->GetColorStyleSheet());
+        qApp->setFont(font);
+        //this->setStyleSheet(this->m_PreferencesDialog->GetColorStyleSheet());
     }
     else
         qDebug() << " Rejected " << endl;
