@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     this->m_ColorDialog = new QColorDialog(this);
     this->m_ColorDialog->setSizePolicy(QSizePolicy::Preferred,QSizePolicy::Preferred);
     //this->m_ColorDialog->setStyleSheet("background-color:green;");
-    //this->m_ColorDialog->setWindowFlags(Qt::Widget);
+    this->m_ColorDialog->setWindowFlags(Qt::Widget);
     this->m_ColorDialog->setOptions(
                 /* do not use native dialog */
                 QColorDialog::DontUseNativeDialog
