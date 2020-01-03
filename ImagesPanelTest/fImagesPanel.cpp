@@ -20,6 +20,7 @@
 #include <QFileInfo>
 #include <QEvent>
 #include <QMouseEvent>
+#include <QRadioButton>
 #include <QDebug>
 #include "myradiobutton.h"
 #include "radiobuttontableitem.h"
@@ -211,10 +212,14 @@ void fImagesPanel::AddDummyItem(QString idstr, const std::string &filename, int 
     item4->setData(Qt::UserRole, idstr.toStdString().c_str());
     item4->setFlags(item4->flags() &  ~Qt::ItemIsEditable);
 
-    //QTableWidgetItem *item5 = new QTableWidgetItem("Overlay" + QString::number(rowIndex));
+//    QTableWidgetItem *item5 = new QTableWidgetItem("Overlay" + QString::number(rowIndex));
+
     RadioButtonTableItem *item5 = new RadioButtonTableItem();
-    item5->setData(Qt::UserRole, idstr.toStdString().c_str());
-    item5->setFlags(item5->flags() &  ~Qt::ItemIsEditable);
+    item5->setFocusPolicy(Qt::NoFocus);
+//    item5->setData(Qt::UserRole, idstr.toStdString().c_str());
+//    item5->setFlags(item5->flags() &  ~Qt::ItemIsEditable);
+
+    //QRadioButton* item5 = new QRadioButton();
 
     //QLabel * label1 = new QLabel;
     //label1->setText(QString::fromStdString(imageSubTypeStr));
@@ -222,8 +227,9 @@ void fImagesPanel::AddDummyItem(QString idstr, const std::string &filename, int 
     m_imagesTable->setItem(rowIndex, IMAGES_COLUMN_TYPE, item2);
     m_imagesTable->setItem(rowIndex, IMAGES_COLUMN_NAME, item3);
     m_imagesTable->setItem(rowIndex, IMAGES_COLUMN_MODALITY, item4);
+//    m_imagesTable->setCellWidget(rowIndex, IMAGES_COLUMN_OVERLAY, item5);
     m_imagesTable->setCellWidget(rowIndex, IMAGES_COLUMN_OVERLAY, item5);
-    m_imagesTable->setItem(rowIndex, IMAGES_COLUMN_OVERLAY, item5);
+//    m_imagesTable->setItem(rowIndex, IMAGES_COLUMN_OVERLAY, item5);
 
 
 
