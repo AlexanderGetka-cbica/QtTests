@@ -31,7 +31,8 @@ SOURCES += \
         mainwindow.cpp \
         myradiobutton.cpp \
         mytablewidget.cpp \
-        radiobuttontableitem.cpp
+        radiobuttontableitem.cpp \
+    mydockwidget.cpp
 
 HEADERS += \
         CaPTkEnums.h \
@@ -41,7 +42,8 @@ HEADERS += \
         myradiobutton.h \
         mytablewidget.h \
         radiobuttontableitem.h \
-        ui_fImagesPanel.h
+        ui_fImagesPanel.h \
+    mydockwidget.h
 
 FORMS += \
         mainwindow.ui
