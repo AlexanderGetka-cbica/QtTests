@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QDragEnterEvent>
+#include <QDropEvent>
+
 #include "fImagesPanel.h"
 
 namespace Ui {
@@ -21,6 +24,10 @@ public slots:
     void CloseImage(QTableWidgetItem*);
     void CloseAllImages();
     void overlayChanged();
+
+protected:
+    void dragEnterEvent(QDragEnterEvent *event);
+    void dropEvent(QDropEvent *event);
 
 private:
     Ui::MainWindow *ui;
