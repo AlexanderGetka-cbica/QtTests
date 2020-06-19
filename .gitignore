@@ -30,3 +30,17 @@ build-zipTest-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
 ExtAppDownloadTestSBRT.zip
 
 build-layoutTest-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
+
+build-DrawingPanelTest-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
+
+build-ExtAppDownloadExtractTest-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
+
+DrawingPanelTest/DrawingPanelTest.pro.user
+
+ExtAppDownloadExtractTest/ExtAppDownloadExtractTest.pro.user
+
+ExtAppDownloadTest/ExtAppDownloadTest.pro.user
+
+ImagesPanelTest/ImagesPanelTest.pro.user
+
+zipTest/zipTest.pro.user
