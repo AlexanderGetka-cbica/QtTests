@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>ITKSnap</DisplayName>
+    <Description>Install ITKSnap.</Description>
+    <Version>1.0.0</Version>
+    <ReleaseDate>2010-09-21</ReleaseDate>
+</Package>

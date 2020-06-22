@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>CaPTk</Name>
+    <Version>1.0.0</Version>
+    <Title>CaPTk Installer</Title>
+    <Publisher>CBICA</Publisher>
+    <StartMenuDir>Super CapTk App</StartMenuDir>
+    <TargetDir>@HomeDir@/InstallationDirectory</TargetDir>
+    <RemoteRepositories>
+        <Repository>
+            <Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/LatestReleasesRepo</Url>
+        </Repository>
+    </RemoteRepositories>
+    <RepositoryCategories>
+    <RepositoryCategoryDisplayname>Releases</RepositoryCategoryDisplayname>
+    <RemoteRepositories>
+        <DisplayName>Archive</DisplayName>
+        <Tooltip>Contains old CapTk releases</Tooltip>
+        <Repository>
+            <Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/ArchiveRepo</Url>
+        </Repository>
+    </RemoteRepositories>
+
+        <RemoteRepositories>
+            <DisplayName>Preview</DisplayName>
+            <Tooltip>Contains untested upcoming release such as Alpha, Beta etc.</Tooltip>
+            <Repository>
+                <Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/PreviewRepo</Url>
+            </Repository>
+        </RemoteRepositories>
+     </RepositoryCategories>
+</Installer>
