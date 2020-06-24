@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>CaPTk Core</DisplayName>
+    <Description>Install CaPTk Core.</Description>
+    <Version>1.7.6</Version>
+    <ReleaseDate>2020-02-21</ReleaseDate>
+    <Licenses>
+        <License name="Beer Public License Agreement" file="license.txt" />
+    </Licenses>
+</Package>

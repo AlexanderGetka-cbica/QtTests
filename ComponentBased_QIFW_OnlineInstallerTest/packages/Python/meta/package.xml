@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Python3.6</DisplayName>
+    <Description>Install Python.</Description>
+    <Version>3.6</Version>
+    <ReleaseDate>2019-09-21</ReleaseDate>
+</Package>
