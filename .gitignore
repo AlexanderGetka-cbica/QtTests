@@ -52,3 +52,5 @@ build-OnlineInstallerTest-Desktop_Qt_5_11_1_MSVC2017_64bit-Release/
 zipProgressTest/zipProgressTest.pro.user
 
 ComponentBased_QIFW_OnlineInstallerTest/OnlineInstallerTest.pro.user
+
+build-zipProgressCLITest-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
