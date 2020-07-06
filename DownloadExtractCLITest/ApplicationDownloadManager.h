@@ -21,9 +21,6 @@ public:
 	void SetName(QString appName);
 	QString GetName() const;
 
-	std::string getApplication(QString appName, bool isCLI);
-	// std::string getApplicationCLI(QString appName);
-
     void SetDownloadFolder(QString folder)
     {
         this->downloadFolder = folder;
@@ -35,6 +32,10 @@ public:
     }
 
     bool IsApplicationAvailable(QString app);
+
+public slots:
+    std::string getApplication(QString appName, bool isCLI);
+    // std::string getApplicationCLI(QString appName);
 
 private:
 
