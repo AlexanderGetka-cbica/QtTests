@@ -6,11 +6,11 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-//    ApplicationPreferences::GetInstance()->AddApplication("libra");
-//    ApplicationPreferences::GetInstance()->AddApplication("deepmedic");
-//    ApplicationPreferences::GetInstance()->AddApplication("libra");
+    ApplicationPreferences::GetInstance()->AddApplication("libra");
+    ApplicationPreferences::GetInstance()->AddApplication("deepmedic");
+    ApplicationPreferences::GetInstance()->AddApplication("libra");
 
-//    ApplicationPreferences::GetInstance()->SerializePreferences();
+    ApplicationPreferences::GetInstance()->SerializePreferences();
     ApplicationPreferences::GetInstance()->DeSerializePreferences();
 
     qDebug() << " Display preferences " << endl;
