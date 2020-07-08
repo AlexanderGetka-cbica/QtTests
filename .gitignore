@@ -58,3 +58,5 @@ build-zipProgressCLITest-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
 zipProgressCLITest/zipProgressCLITest.pro.user
 
 build-DownloadExtractCLITest-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
+
+build-ApplicationPreferencesTest-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
