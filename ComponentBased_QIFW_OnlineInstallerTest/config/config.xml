@@ -8,7 +8,7 @@
     <TargetDir>@HomeDir@/InstallationDirectory</TargetDir>
     <RemoteRepositories>
         <Repository>
-            <Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/LatestReleasesRepo</Url>
+            <Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/QIFWTesting/ComponentBased_QIFW_OnlineInstallerTest/LatestReleasesRepo</Url>
         </Repository>
     </RemoteRepositories>
     <RepositoryCategories>
@@ -17,7 +17,7 @@
         <DisplayName>Archive</DisplayName>
         <Tooltip>Contains old CapTk releases</Tooltip>
         <Repository>
-            <Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/ArchiveRepo</Url>
+            <Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/QIFWTesting/ComponentBased_QIFW_OnlineInstallerTest/ArchiveRepo</Url>
         </Repository>
     </RemoteRepositories>
 
@@ -25,7 +25,7 @@
             <DisplayName>Preview</DisplayName>
             <Tooltip>Contains untested upcoming release such as Alpha, Beta etc.</Tooltip>
             <Repository>
-                <Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/PreviewRepo</Url>
+                <Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/QIFWTesting/ComponentBased_QIFW_OnlineInstallerTest/PreviewRepo</Url>
             </Repository>
         </RemoteRepositories>
      </RepositoryCategories>
