@@ -18,7 +18,10 @@
         <Preselected>true</Preselected>
         <Tooltip>Contains Miniconda releases</Tooltip>
         <Repository>
-            <Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/QIFWTesting/OnlineMinicondaInstallerTest/Miniconda/Windows/MinicondaWinRepo/</Url>
+            <!--windows repo-->
+            <!--<Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/QIFWTesting/OnlineMinicondaInstallerTest/Miniconda/Windows/MinicondaWinRepo/</Url>-->
+            <!--Linux repo-->
+            <Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/QIFWTesting/OnlineMinicondaInstallerTest/Miniconda/Linux/MinicondaLinuxRepo</Url>
         </Repository>
     </RemoteRepositories>
      </RepositoryCategories>
