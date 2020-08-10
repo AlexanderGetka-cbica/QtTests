@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>CaPTk</Name>
+    <Version>1.0.0</Version>
+    <Title>CaPTk Installer</Title>
+    <Publisher>CBICA</Publisher>
+    <StartMenuDir>Super CapTk App</StartMenuDir>
+    <TargetDir>@HomeDir@/InstallationDirectory</TargetDir>
+    <RemoteRepositories>
+        <Repository>
+            <Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/QIFWTesting/OnlineMinicondaInstallerTest/CaPTk/CaPTkRepo</Url>
+        </Repository>
+    </RemoteRepositories>
+    <RepositoryCategories>
+    <RepositoryCategoryDisplayname>Releases</RepositoryCategoryDisplayname>
+    <RemoteRepositories>
+        <DisplayName>Miniconda</DisplayName>
+        <Preselected>true</Preselected>
+        <Tooltip>Contains Miniconda releases</Tooltip>
+        <Repository>
+            <!--windows repo-->
+            <!--<Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/QIFWTesting/OnlineMinicondaInstallerTest/Miniconda/Windows/MinicondaWinRepo/</Url>-->
+            <!--Linux repo-->
+            <Url>ftp://www.nitrc.org/home/groups/captk/downloads/Packages/QIFWTesting/OnlineMinicondaInstallerTest/Miniconda/Linux/MinicondaLinuxRepo</Url>
+        </Repository>
+    </RemoteRepositories>
+     </RepositoryCategories>
+</Installer>

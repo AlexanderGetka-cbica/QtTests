@@ -52,3 +52,19 @@ build-OnlineInstallerTest-Desktop_Qt_5_11_1_MSVC2017_64bit-Release/
 zipProgressTest/zipProgressTest.pro.user
 
 ComponentBased_QIFW_OnlineInstallerTest/OnlineInstallerTest.pro.user
+
+build-zipProgressCLITest-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
+
+zipProgressCLITest/zipProgressCLITest.pro.user
+
+build-DownloadExtractCLITest-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
+
+build-ApplicationPreferencesTest-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
+
+build-SystemInfoTest-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
+
+SystemInfoTest/SystemInfoTest.pro.user
+
+ApplicationPreferencesTest/ApplicationPreferencesTest.pro.user
+
+DownloadExtractCLITest/DownloadExtractCLITest.pro.user
